@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Default.master.cs" Inherits="_Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head runat="server">
+    <title>
+    </title>
+</head>
+<form mid="form1" runat="server">
+<asp:ContentPlaceHolder id="title" runat="server">
+    <p style="border-bottom: thick solid #000000; height: 88px; background-color: #FFFF99;">
+                <asp:Image ID="Image1" runat="server" Height="60px" 
+                    ImageUrl="~/Images/icon.PNG" Width="312px" />
+&nbsp;
+                <asp:Image ID="Image2" runat="server" Height="40px" 
+                    ImageUrl="~/Images/Title.png" Width="37px" />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+        <asp:Button ID="Button1" runat="server" Height="56px" PostBackUrl="~/home.aspx" 
+            Text="HOME" Width="143px" onclick="Button1_Click" BackColor="#CC00CC" 
+            BorderColor="White" BorderStyle="Solid" ForeColor="White" />
+        <asp:Button ID="Button2" runat="server" Height="56px" Text="CONTACT US" 
+            Width="156px" onclick="Button2_Click" PostBackUrl="~/Contactus.aspx" 
+            BackColor="#CC00CC" BorderColor="White" BorderStyle="Solid" ForeColor="White" />
+        <asp:Button ID="Button3" runat="server" Height="56px" 
+            PostBackUrl="~/login.aspx" Text="LOGIN" Width = "132px" 
+            BackColor="#CC00CC" BorderColor="White" BorderStyle="Solid" ForeColor="White" />
+    </p>
+    </asp:ContentPlaceHolder>
+<bodybgcolor="#33cccc">
+<asp:ContentPlaceHolder  id="body" runat="server">
+    <p style="height: 593px">
+        <br />
+    </p>
+    </asp:ContentPlaceHolder>
+ <asp:ContentPlaceHolder id="bottom" runat="server">
+     <p align="center">
+         Copyright 2019 Rapid Alpha Associates. All Rights Reserved
+         <br />
+     </p>
+    </asp:ContentPlaceHolder>
+</form>
